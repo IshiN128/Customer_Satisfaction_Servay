@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:foregroundGravity="top"
+    android:layoutMode="clipBounds"
+    android:touchscreenBlocksFocus="true"
+    tools:context=".MainActivity"> <!--change background image in main screen-->
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="923dp"
+        android:layout_height="71dp"
+        android:background="#F68B43"
+        android:layoutDirection="inherit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="1277dp"
+        android:layout_height="16dp"
+        android:background="#142C4F"
+        android:layoutDirection="inherit"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="174dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="4dp"
+        android:layoutDirection="inherit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView11"
+        app:srcCompat="@drawable/fmi_lpgo_transparent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/caudex"
+        android:layoutDirection="inherit"
+        android:text="How are our services?"
+        android:textColor="@color/primary"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView12"
+        app:layout_constraintTop_toTopOf="@+id/imageView11"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layoutDirection="inherit"
+        app:constraint_referenced_ids="linearLayout,imageView11,imageView12,textView3" />
+
+    <Button
+        android:id="@+id/btn_poor"
+        android:layout_width="119dp"
+        android:layout_height="182dp"
+        android:layout_marginStart="464dp"
+        android:drawableBottom="@drawable/poor"
+        android:drawingCacheQuality="high"
+        android:text="Poor     ⭐⭐  "
+        app:cornerRadius="@dimen/cardview_compat_inset_shadow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.661" />
+
+    <Button
+        android:id="@+id/btn_excellent"
+        android:layout_width="120dp"
+        android:layout_height="183dp"
+        android:layout_marginStart="92dp"
+        android:drawableBottom="@drawable/ex1"
+        android:drawingCacheQuality="high"
+        android:text="Excellent ⭐⭐⭐⭐⭐"
+        android:textSize="13dp"
+        app:cornerRadius="@dimen/cardview_compat_inset_shadow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.674" />
+
+    <Button
+        android:id="@+id/btn_good"
+        android:layout_width="119dp"
+        android:layout_height="182dp"
+        android:layout_marginStart="216dp"
+        android:drawableBottom="@drawable/good1"
+        android:drawingCacheQuality="high"
+        android:text="Good ⭐⭐⭐⭐"
+        app:cornerRadius="@dimen/cardview_compat_inset_shadow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.661" />
+
+    <Button
+        android:id="@+id/btn_average"
+        android:layout_width="119dp"
+        android:layout_height="182dp"
+        android:layout_marginStart="340dp"
+        android:drawableBottom="@drawable/avg1"
+        android:drawingCacheQuality="high"
+        android:text="Average ⭐⭐⭐"
+        app:cornerRadius="@dimen/cardview_compat_inset_shadow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.661" />
+
+    <Button
+        android:id="@+id/btn_vpoor"
+        android:layout_width="119dp"
+        android:layout_height="182dp"
+        android:layout_marginStart="588dp"
+        android:drawableBottom="@drawable/vpoor1"
+        android:drawingCacheQuality="high"
+        android:text="Very Poor  ⭐"
+        app:cornerRadius="@dimen/cardview_compat_inset_shadow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.661" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

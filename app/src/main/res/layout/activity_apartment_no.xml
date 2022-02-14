@@ -9,15 +9,14 @@
 
     <Spinner
         android:id="@+id/spinner1"
-        android:layout_width="179dp"
-        android:layout_height="34dp"
-        android:layout_marginStart="341dp"
-        android:layout_marginEnd="314dp"
-        android:layout_marginBottom="236dp"
-        android:background="@color/white"
+        android:layout_width="211dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="262dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="286dp"
+        android:backgroundTint="#070606"
         android:spinnerMode="dropdown"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.033"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

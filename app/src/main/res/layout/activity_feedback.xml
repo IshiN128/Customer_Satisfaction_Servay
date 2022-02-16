@@ -7,24 +7,11 @@
     android:background="#F58A42"
     tools:context=".feedback">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="217dp"
-        android:layout_height="26dp"
-        android:layout_marginTop="452dp"
-        android:layout_marginEnd="216dp"
-        android:fontFamily="@font/caudex"
-        android:text="* Optional"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="204dp"
-        android:layout_height="108dp"
+        android:layout_width="340dp"
+        android:layout_height="147dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,9 +20,9 @@
 
     <TextView
         android:id="@+id/feedback_lbl"
-        android:layout_width="428dp"
-        android:layout_height="112dp"
-        android:layout_marginTop="56dp"
+        android:layout_width="509dp"
+        android:layout_height="185dp"
+        android:layout_marginTop="156dp"
         android:fontFamily="@font/caudex"
         android:shadowColor="#F8F8F8"
         android:shadowRadius="12"
@@ -44,33 +31,33 @@
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
         android:textColor="@color/primary"
-        android:textSize="40sp"
+        android:textSize="52sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.316"
+        app:layout_constraintHorizontal_bias="0.238"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/btn_AptNo"
         style="@android:style/Widget.ImageButton"
-        android:layout_width="230dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="304dp"
+        android:layout_width="417dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="476dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/feedback_lbl"
         app:tint="#F3E5F5" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="141dp"
-        android:layout_height="28dp"
+        android:layout_width="254dp"
+        android:layout_height="55dp"
         android:layout_marginStart="16dp"
         android:fontFamily="@font/caudex"
         android:text="Apartment No"
         android:textColor="#000000"
-        android:textSize="20sp"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/btn_AptNo"
         app:layout_constraintStart_toStartOf="@+id/btn_AptNo"
@@ -78,18 +65,18 @@
 
     <TextView
         android:id="@+id/textView16"
-        android:layout_width="79dp"
-        android:layout_height="50dp"
+        android:layout_width="164dp"
+        android:layout_height="33dp"
         android:layout_marginStart="8dp"
         android:fontFamily="@font/caudex"
         android:text="* Optional"
         android:textColor="#000000"
-        android:textSize="16sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/btn_AptNo"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.754" />
+        app:layout_constraintVertical_bias="0.773" />
 
     <ImageView
         android:id="@+id/imageView9"
@@ -105,9 +92,9 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="213dp"
-        android:layout_height="380dp"
-        android:layout_marginStart="652dp"
+        android:layout_width="388dp"
+        android:layout_height="676dp"
+        android:layout_marginStart="892dp"
         android:layout_marginBottom="16dp"
         android:background="@color/primary"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -116,40 +103,38 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton
-        android:id="@+id/btn_dn"
+        android:id="@+id/btn_ignore"
         style="@android:style/Widget.Holo.ImageButton"
-        android:layout_width="222dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="72dp"
+        android:layout_width="396dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="216dp"
         android:accessibilityLiveRegion="polite"
         android:adjustViewBounds="true"
         android:backgroundTint="@color/white"
         android:clickable="true"
         android:cropToPadding="true"
-        app:layout_constraintStart_toEndOf="@+id/feedback_lbl"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/btn_ignore"
+        android:id="@+id/btn_dn"
         style="@android:style/Widget.Holo.ImageButton"
-        android:layout_width="222dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="156dp"
+        android:layout_width="395dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="76dp"
         android:accessibilityLiveRegion="polite"
         android:adjustViewBounds="true"
         android:backgroundTint="@color/white"
         android:clickable="true"
         android:cropToPadding="true"
-        app:layout_constraintStart_toEndOf="@+id/feedback_lbl"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="84dp"
+        android:layout_marginEnd="160dp"
         android:fontFamily="@font/caudex"
         android:text="DONE"
         android:textAllCaps="true"
@@ -159,13 +144,13 @@
         app:layout_constraintBottom_toBottomOf="@+id/btn_dn"
         app:layout_constraintEnd_toEndOf="@+id/btn_dn"
         app:layout_constraintTop_toTopOf="@+id/btn_dn"
-        app:layout_constraintVertical_bias="0.534" />
+        app:layout_constraintVertical_bias="0.552" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="72dp"
+        android:layout_marginEnd="140dp"
         android:fontFamily="@font/caudex"
         android:text="IGNORE"
         android:textAllCaps="true"
@@ -175,7 +160,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/btn_ignore"
         app:layout_constraintEnd_toEndOf="@+id/btn_dn"
         app:layout_constraintTop_toTopOf="@+id/btn_ignore"
-        app:layout_constraintVertical_bias="0.558" />
+        app:layout_constraintVertical_bias="0.566" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -47,10 +47,10 @@ public class MainActivity extends AppCompatActivity
             {
                 Intent intent =new Intent(MainActivity.this,feedback.class);
                 startActivity(intent);
-
-                test.put("Response", "Excellent");
-
-                db.collection("vote").add(test);
+//
+//                test.put("Response", "Excellent");
+//
+//                db.collection("vote").add(test);
 
             }
         });

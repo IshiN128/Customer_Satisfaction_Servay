@@ -1,7 +1,5 @@
 package com.example.cs;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -12,11 +10,9 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 
-public class ApartmentNo
-        extends AppCompatActivity
-        implements AdapterView.OnItemSelectedListener
+public class ApartmentNo extends AppCompatActivity implements AdapterView.OnItemSelectedListener
       {
-          String[] bankNames={"Select Your Apartment No",
+          String[] aptno={"Select Your Apartment No",
                   "6/1","6/2","6/3","6/4","6/5","6/6",
                   "7/1","7/2","7/3","7/4","7/5","7/6",
                   "8/1","8/2","8/3","8/4","8/5","8/6",
@@ -28,8 +24,11 @@ public class ApartmentNo
                   "14/1","14/2","14/3","14/4","14/5","14/6",
                   "15/1","15/2","15/3","15/4","15/5","15/6",
                   "16/1","16/2","16/3","16/4","16/5","16/6",
-                  "17/1","17/2","17/3","17/4","17/5","17/6",};
-          Spinner sp1;
+                  "17/1","17/2","17/3","17/4","17/5","17/6",
+          };
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -42,7 +41,7 @@ public class ApartmentNo
             spin.setOnItemSelectedListener(this);
 
             //Creating the ArrayAdapter instance having the bank name list
-            ArrayAdapter aa = new ArrayAdapter(this,android.R.layout.simple_spinner_item,bankNames);
+            ArrayAdapter aa = new ArrayAdapter(this,android.R.layout.simple_spinner_item,aptno);
             aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
             //Setting the ArrayAdapter data on the Spinner
             spin.setAdapter(aa);
@@ -54,7 +53,7 @@ public class ApartmentNo
           @Override
           public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
 
-              Toast.makeText(getApplicationContext(), bankNames[i], Toast.LENGTH_LONG).show();
+              Toast.makeText(getApplicationContext(), aptno[i], Toast.LENGTH_LONG).show();
           }
 
           @Override

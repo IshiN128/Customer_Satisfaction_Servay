@@ -46,14 +46,14 @@
         android:layout_width="388dp"
         android:layout_height="92dp"
         android:layout_marginStart="472dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="13dp"
         android:background="@drawable/dropdowns"
         android:dropDownWidth="wrap_content"
         android:spinnerMode="dropdown"
         android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/imageView7"
-        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintHorizontal_bias="0.028"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

@@ -12,8 +12,8 @@
         android:id="@+id/imageView6"
         android:layout_width="340dp"
         android:layout_height="147dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginBottom="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/fmi_lpgo_transparent" />
@@ -22,7 +22,7 @@
         android:id="@+id/feedback_lbl"
         android:layout_width="509dp"
         android:layout_height="185dp"
-        android:layout_marginTop="156dp"
+        android:layout_marginTop="88dp"
         android:fontFamily="@font/caudex"
         android:shadowColor="#F8F8F8"
         android:shadowRadius="12"
@@ -41,54 +41,44 @@
     <ImageButton
         android:id="@+id/btn_AptNo"
         style="@android:style/Widget.ImageButton"
-        android:layout_width="417dp"
-        android:layout_height="103dp"
-        android:layout_marginTop="168dp"
-        android:layout_marginEnd="476dp"
+        android:layout_width="255dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="544dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/feedback_lbl"
         app:tint="#F3E5F5" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="254dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="16dp"
+        android:layout_width="191dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="32dp"
         android:fontFamily="@font/caudex"
-        android:text="Apartment No"
+        android:text="SEND"
+        android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="34sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/btn_AptNo"
         app:layout_constraintStart_toStartOf="@+id/btn_AptNo"
-        app:layout_constraintTop_toTopOf="@+id/btn_AptNo" />
+        app:layout_constraintTop_toTopOf="@+id/btn_AptNo"
+        app:layout_constraintVertical_bias="0.592" />
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="164dp"
         android:layout_height="33dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="192dp"
         android:fontFamily="@font/caudex"
         android:text="* Optional"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/btn_AptNo"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.773" />
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="78dp"
-        android:layout_height="90dp"
-        android:layout_marginStart="196dp"
-        android:layout_marginBottom="12dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
-        app:srcCompat="@drawable/click__1_" />
+        app:layout_constraintVertical_bias="0.468" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -161,6 +151,26 @@
         app:layout_constraintEnd_toEndOf="@+id/btn_dn"
         app:layout_constraintTop_toTopOf="@+id/btn_ignore"
         app:layout_constraintVertical_bias="0.566" />
+
+    <EditText
+        android:id="@+id/txtbox_aptno"
+        android:layout_width="287dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="264dp"
+        android:ems="10"
+        android:focusable="auto"
+        android:focusableInTouchMode="true"
+        android:hint="Type your Aparment No.."
+        android:inputType="textPersonName"
+        android:textColorHighlight="@color/primary"
+        android:textColorLink="@color/primary"
+        android:textCursorDrawable="@color/primary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,7 +19,7 @@ public class feedback2 extends AppCompatActivity {
 
     ImageButton  dn;
     ImageButton ignr;
-    ImageButton AprtNo;
+    Button AprtNo;
     private EditText aprtNo;
 
     private  String apartNo;
@@ -29,10 +29,9 @@ public class feedback2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_feedback2);
+        setContentView(R.layout.activity_feedbackgood);
 
         dn = findViewById(R.id.btn_dn);
-        ignr = findViewById(R.id.btn_ignore);
         AprtNo = findViewById(R.id.btn_AptNo);
         aprtNo = findViewById(R.id.txtbox_aptno);
 

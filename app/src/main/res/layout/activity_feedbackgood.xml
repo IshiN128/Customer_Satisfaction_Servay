@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#F58A42"
+	tools:context=".feedback">
+
+
+	<LinearLayout
+		android:id="@+id/linearLayout2"
+		android:layout_width="1279dp"
+		android:layout_height="225dp"
+		android:layout_marginBottom="460dp"
+		android:background="@drawable/fmi_top_bar"
+		android:orientation="vertical"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent">
+
+	</LinearLayout>
+
+	<ImageButton
+		android:id="@+id/btn_dn"
+		style="@android:style/Widget.Holo.ImageButton"
+		android:layout_width="555dp"
+		android:layout_height="67dp"
+		android:layout_marginStart="388dp"
+		android:accessibilityLiveRegion="polite"
+		android:adjustViewBounds="true"
+		android:background="@drawable/button"
+		android:backgroundTint="@color/round_button_color"
+		android:clickable="true"
+		android:cropToPadding="true"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.818" />
+
+	<Button
+		android:id="@+id/btn_AptNo"
+		android:layout_width="244dp"
+		android:layout_height="54dp"
+		android:layout_marginStart="20dp"
+		android:layout_marginBottom="32dp"
+		android:background="@drawable/button2"
+		android:text="SEND"
+		app:layout_constraintBottom_toTopOf="@+id/btn_dn"
+		app:layout_constraintStart_toEndOf="@+id/txtbox_aptno" />
+
+	<TextView
+		android:id="@+id/textView16"
+		android:layout_width="164dp"
+		android:layout_height="33dp"
+		android:layout_marginStart="384dp"
+		android:fontFamily="@font/caudex"
+		android:text="* Optional"
+		android:textColor="#000000"
+		android:textSize="20sp"
+		android:textStyle="bold"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.58" />
+
+	<TextView
+		android:id="@+id/textView8"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="228dp"
+		android:fontFamily="@font/caudex"
+		android:text="DONE"
+		android:textAllCaps="true"
+		android:textAppearance="@style/FlatButton"
+		android:textColor="#FFFFFF"
+		android:textSize="20sp"
+		app:layout_constraintBottom_toBottomOf="@+id/btn_dn"
+		app:layout_constraintEnd_toEndOf="@+id/btn_dn"
+		app:layout_constraintTop_toTopOf="@+id/btn_dn"
+		app:layout_constraintVertical_bias="0.512" />
+
+	<EditText
+		android:id="@+id/txtbox_aptno"
+		android:layout_width="287dp"
+		android:layout_height="71dp"
+		android:layout_marginBottom="184dp"
+		android:ems="10"
+		android:focusable="auto"
+		android:focusableInTouchMode="true"
+		android:hint="Type your Aparment No.."
+		android:inputType="textPersonName"
+		android:textColorHighlight="@color/primary"
+		android:textColorLink="@color/primary"
+		android:textCursorDrawable="@color/primary"
+		android:textSize="20sp"
+		android:textStyle="bold"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.396"
+		app:layout_constraintStart_toStartOf="parent" />
+
+	<TextView
+		android:id="@+id/textView4"
+		android:layout_width="518dp"
+		android:layout_height="147dp"
+		android:layout_marginTop="144dp"
+		android:text="Thank You For Your Feedback!!"
+		android:textAlignment="center"
+		android:textSize="60sp"
+		android:textStyle="bold"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

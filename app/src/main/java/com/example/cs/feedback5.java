@@ -1,5 +1,5 @@
 package com.example.cs;
-import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -7,12 +7,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-public class feedback extends AppCompatActivity {
+public class feedback5 extends AppCompatActivity {
 
     FirebaseFirestore db = FirebaseFirestore.getInstance();
 
@@ -27,12 +30,11 @@ public class feedback extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
-        {
+    {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_feedback);
+        setContentView(R.layout.activity_feedbackvpoor);
 
         dn = findViewById(R.id.btn_dn);
-        ignr = findViewById(R.id.btn_ignore);
         AprtNo = findViewById(R.id.btn_AptNo);
         aprtNo = findViewById(R.id.txtbox_aptno);
 
@@ -40,7 +42,7 @@ public class feedback extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent =new Intent(feedback.this,MainActivity.class);
+                Intent intent =new Intent(feedback5.this,MainActivity.class);
                 startActivity(intent);
 
             }
@@ -59,7 +61,7 @@ public class feedback extends AppCompatActivity {
         });
 
 
-        };
+    };
     private void addDataToFirestore(String apartNo) {
 
         CollectionReference dbaptno = db.collection("ApartmentNos");
@@ -68,7 +70,7 @@ public class feedback extends AppCompatActivity {
         dbaptno.add(ApartmentNos).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
             @Override
             public void onSuccess(DocumentReference documentReference) {
-                Toast.makeText(feedback.this, "Your Apartment No has been added..", Toast.LENGTH_SHORT).show();
+                Toast.makeText(feedback5.this, "Your Apartment No has been added..", Toast.LENGTH_SHORT).show();
             }
         });
 

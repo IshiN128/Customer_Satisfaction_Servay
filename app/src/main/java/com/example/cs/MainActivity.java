@@ -49,12 +49,6 @@ public class MainActivity extends AppCompatActivity
             {
                 Intent intent =new Intent(MainActivity.this,feedback.class);
                 startActivity(intent);
-//
-//                test.put("Response", "Excellent");
-//
-//                db.collection("vote").add(test);
-
-
             }
         });
 
@@ -81,15 +75,8 @@ public class MainActivity extends AppCompatActivity
             {
                 // TODO Auto-generated method stub
 
-                Intent intent = new Intent(MainActivity.this, feedback.class);
+                Intent intent = new Intent(MainActivity.this, feedback3.class);
                 startActivity(intent);
-
-
-
-                test.put("Response", "Average");
-
-                db.collection("vote").add(test);
-
 
 
             }
@@ -106,14 +93,6 @@ public class MainActivity extends AppCompatActivity
                 Intent intent = new Intent(MainActivity.this, feedback.class);
                 startActivity(intent);
 
-
-
-                test.put("Response", "Poor");
-
-                db.collection("vote").add(test);
-
-
-
             }
         });
 
@@ -127,13 +106,6 @@ public class MainActivity extends AppCompatActivity
 
                 Intent intent = new Intent(MainActivity.this, feedback.class);
                 startActivity(intent);
-
-
-                test.put("Response", "Very Poor");
-
-                db.collection("vote").add(test);
-
-
 
             }
         });

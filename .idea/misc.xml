@@ -4,17 +4,25 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Apps/CS - Copy/app/src/main/res/drawable-anydpi/ic_action_name.xml" value="0.26614583333333336" />
+        <entry key="..\:/Apps/CS - Copy/app/src/main/res/drawable-hdpi/button2.xml" value="0.4" />
         <entry key="..\:/Apps/CS - Copy/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.26614583333333336" />
+        <entry key="..\:/Apps/CS - Copy/app/src/main/res/drawable/button.xml" value="0.264" />
+        <entry key="..\:/Apps/CS - Copy/app/src/main/res/drawable/button2.xml" value="0.546875" />
         <entry key="..\:/Apps/CS - Copy/app/src/main/res/drawable/dropdowns.xml" value="0.26614583333333336" />
         <entry key="..\:/Apps/CS - Copy/app/src/main/res/drawable/ic_launcher_background.xml" value="0.26614583333333336" />
         <entry key="..\:/Apps/CS - Copy/app/src/main/res/font/.xml" value="0.28020833333333334" />
         <entry key="..\:/Apps/CS - Copy/app/src/main/res/layout-w1240dp/activity_feedback2.xml" value="0.264" />
         <entry key="..\:/Apps/CS - Copy/app/src/main/res/layout-w1240dp/content_scrolling.xml" value="0.2" />
+        <entry key="..\:/Apps/CS - Copy/app/src/main/res/layout-w936dp/activity_feedbackavg.xml" value="0.291970802919708" />
         <entry key="..\:/Apps/CS - Copy/app/src/main/res/layout-w936dp/content_scrolling.xml" value="0.6" />
         <entry key="..\:/Apps/CS - Copy/app/src/main/res/layout/activity_apartmentNo.xml" value="0.16996699669966997" />
         <entry key="..\:/Apps/CS - Copy/app/src/main/res/layout/activity_apartment_no.xml" value="0.264" />
-        <entry key="..\:/Apps/CS - Copy/app/src/main/res/layout/activity_feedback.xml" value="0.176" />
-        <entry key="..\:/Apps/CS - Copy/app/src/main/res/layout/activity_feedback2.xml" value="0.152" />
+        <entry key="..\:/Apps/CS - Copy/app/src/main/res/layout/activity_feedback.xml" value="0.264" />
+        <entry key="..\:/Apps/CS - Copy/app/src/main/res/layout/activity_feedback2.xml" value="0.264" />
+        <entry key="..\:/Apps/CS - Copy/app/src/main/res/layout/activity_feedbackavg.xml" value="0.2637215528781794" />
+        <entry key="..\:/Apps/CS - Copy/app/src/main/res/layout/activity_feedbackgood.xml" value="0.264" />
+        <entry key="..\:/Apps/CS - Copy/app/src/main/res/layout/activity_feedbackpoor.xml" value="0.291970802919708" />
+        <entry key="..\:/Apps/CS - Copy/app/src/main/res/layout/activity_feedbackvpoor.xml" value="0.291970802919708" />
         <entry key="..\:/Apps/CS - Copy/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Apps/CS - Copy/app/src/main/res/layout/activity_main2.xml" value="0.176" />
         <entry key="..\:/Apps/CS - Copy/app/src/main/res/layout/activity_scrolling.xml" value="0.176" />

@@ -9,68 +9,52 @@
     tools:context=".feedback">
 
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="340dp"
-        android:layout_height="147dp"
-        android:layout_marginStart="280dp"
-        android:layout_marginBottom="24dp"
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="1279dp"
+        android:layout_height="225dp"
+        android:layout_marginBottom="460dp"
+        android:background="@drawable/fmi_top_bar"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/fmi_lpgo_transparent" />
-
-    <TextView
-        android:id="@+id/feedback_lbl"
-        android:layout_width="568dp"
-        android:layout_height="212dp"
-        android:layout_marginTop="88dp"
-        android:fontFamily="@font/caudex"
-        android:shadowColor="#F8F8F8"
-        android:shadowRadius="12"
-        android:soundEffectsEnabled="true"
-        android:text="Thank You for your Good Feedback !!"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
-        android:textColor="@color/primary"
-        android:textSize="52sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.238"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent">
+
+    </LinearLayout>
 
     <ImageButton
-        android:id="@+id/btn_AptNo"
-        style="@android:style/Widget.ImageButton"
-        android:layout_width="255dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="132dp"
-        android:layout_marginEnd="544dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/feedback_lbl"
-        app:tint="#F3E5F5" />
+        android:id="@+id/btn_dn"
+        style="@android:style/Widget.Holo.ImageButton"
+        android:layout_width="555dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="388dp"
+        android:accessibilityLiveRegion="polite"
+        android:adjustViewBounds="true"
+        android:background="@drawable/button"
+        android:backgroundTint="@color/round_button_color"
+        android:clickable="true"
+        android:cropToPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.818" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="191dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="32dp"
-        android:fontFamily="@font/caudex"
+    <Button
+        android:id="@+id/btn_AptNo"
+        android:layout_width="244dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/button2"
         android:text="SEND"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_AptNo"
-        app:layout_constraintStart_toStartOf="@+id/btn_AptNo"
-        app:layout_constraintTop_toTopOf="@+id/btn_AptNo"
-        app:layout_constraintVertical_bias="0.592" />
+        app:layout_constraintBottom_toTopOf="@+id/btn_dn"
+        app:layout_constraintStart_toEndOf="@+id/txtbox_aptno" />
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="164dp"
         android:layout_height="33dp"
-        android:layout_marginStart="200dp"
+        android:layout_marginStart="384dp"
         android:fontFamily="@font/caudex"
         android:text="* Optional"
         android:textColor="#000000"
@@ -79,85 +63,29 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.547" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="390dp"
-        android:layout_height="784dp"
-        android:layout_marginStart="892dp"
-        android:layout_marginBottom="16dp"
-        android:background="@color/primary"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageButton
-        android:id="@+id/btn_ignore"
-        style="@android:style/Widget.Holo.ImageButton"
-        android:layout_width="396dp"
-        android:layout_height="109dp"
-        android:layout_marginTop="216dp"
-        android:accessibilityLiveRegion="polite"
-        android:adjustViewBounds="true"
-        android:backgroundTint="@color/white"
-        android:clickable="true"
-        android:cropToPadding="true"
-        app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/btn_dn"
-        style="@android:style/Widget.Holo.ImageButton"
-        android:layout_width="395dp"
-        android:layout_height="102dp"
-        android:layout_marginTop="76dp"
-        android:accessibilityLiveRegion="polite"
-        android:adjustViewBounds="true"
-        android:backgroundTint="@color/white"
-        android:clickable="true"
-        android:cropToPadding="true"
-        app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintVertical_bias="0.58" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="160dp"
+        android:layout_marginEnd="228dp"
         android:fontFamily="@font/caudex"
         android:text="DONE"
         android:textAllCaps="true"
         android:textAppearance="@style/FlatButton"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/btn_dn"
         app:layout_constraintEnd_toEndOf="@+id/btn_dn"
         app:layout_constraintTop_toTopOf="@+id/btn_dn"
-        app:layout_constraintVertical_bias="0.552" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="140dp"
-        android:fontFamily="@font/caudex"
-        android:text="IGNORE"
-        android:textAllCaps="true"
-        android:textAppearance="@style/FlatButton"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_ignore"
-        app:layout_constraintEnd_toEndOf="@+id/btn_dn"
-        app:layout_constraintTop_toTopOf="@+id/btn_ignore"
-        app:layout_constraintVertical_bias="0.566" />
+        app:layout_constraintVertical_bias="0.512" />
 
     <EditText
         android:id="@+id/txtbox_aptno"
         android:layout_width="287dp"
         android:layout_height="71dp"
-        android:layout_marginBottom="264dp"
+        android:layout_marginBottom="184dp"
         android:ems="10"
         android:focusable="auto"
         android:focusableInTouchMode="true"
@@ -170,8 +98,21 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintHorizontal_bias="0.396"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="518dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="144dp"
+        android:text="Thank You For Your Feedback!!"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

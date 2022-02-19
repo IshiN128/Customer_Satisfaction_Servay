@@ -53,7 +53,7 @@
         android:layout_marginStart="152dp"
         android:fontFamily="@font/caudex"
         android:layoutDirection="inherit"
-        android:text="How are our services?"
+        android:text="How are our services??"
         android:textColor="@color/primary"
         android:textSize="60sp"
         android:textStyle="bold"
@@ -78,7 +78,7 @@
         android:drawingCacheQuality="high"
         android:text="POOR          ⭐⭐"
         android:textSize="24sp"
-        app:cornerRadius="@dimen/cardview_compat_inset_shadow"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -86,6 +86,7 @@
 
     <Button
         android:id="@+id/btn_excellent"
+
         android:layout_width="235dp"
         android:layout_height="334dp"
         android:layout_marginStart="32dp"
@@ -101,6 +102,7 @@
 
     <Button
         android:id="@+id/btn_average"
+
         android:layout_width="235dp"
         android:layout_height="334dp"
         android:layout_marginStart="520dp"
@@ -116,6 +118,7 @@
 
     <Button
         android:id="@+id/btn_good"
+
         android:layout_width="235dp"
         android:layout_height="334dp"
         android:layout_marginStart="276dp"
@@ -131,6 +134,7 @@
 
     <Button
         android:id="@+id/btn_vpoor"
+
         android:layout_width="235dp"
         android:layout_height="334dp"
         android:layout_marginStart="1008dp"

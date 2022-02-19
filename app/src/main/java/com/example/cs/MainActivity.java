@@ -1,16 +1,12 @@
 package com.example.cs;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
-
 import com.google.firebase.firestore.FirebaseFirestore;
 
-import java.util.HashMap;
-import java.util.Map;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -23,7 +19,6 @@ public class MainActivity extends AppCompatActivity
     Button vp;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,17 +26,14 @@ public class MainActivity extends AppCompatActivity
 
         //Toast.makeText(MainActivity.this, "Firebase Connection Success!!", Toast.LENGTH_LONG);
 
-
+        excellent= findViewById(R.id.btn_excellent);
         gd= findViewById(R.id.btn_good);
         avg= findViewById(R.id.btn_average);
         poor= findViewById(R.id.btn_poor);
         vp= findViewById(R.id.btn_vpoor);
 
 
-        Map<String, Object> test = new HashMap<>();
 
-
-        excellent= findViewById(R.id.btn_excellent);
         excellent.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -90,7 +82,7 @@ public class MainActivity extends AppCompatActivity
             {
                 // TODO Auto-generated method stub
 
-                Intent intent = new Intent(MainActivity.this, feedback.class);
+                Intent intent = new Intent(MainActivity.this, feedback4.class);
                 startActivity(intent);
 
             }
@@ -104,7 +96,7 @@ public class MainActivity extends AppCompatActivity
             {
                 // TODO Auto-generated method stub
 
-                Intent intent = new Intent(MainActivity.this, feedback.class);
+                Intent intent = new Intent(MainActivity.this, feedback5.class);
                 startActivity(intent);
 
             }

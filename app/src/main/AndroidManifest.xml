@@ -10,6 +10,15 @@
 		android:supportsRtl="true"
 		android:theme="@style/Theme.CS">
 		<activity
+			android:name=".feedback5"
+			android:exported="true" />
+		<activity
+			android:name=".feedback4"
+			android:exported="true" />
+		<activity
+			android:name=".feedback3"
+			android:exported="true" />
+		<activity
 			android:name=".feedback2"
 			android:exported="true" />
 		<activity

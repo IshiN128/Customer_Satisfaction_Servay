@@ -3,7 +3,7 @@ package com.example.cs;
 public class storeData5 {
 
     private String aptNo;
-    private String vote = "Poor";
+    private String vote = "Very Poor";
 
     public storeData5()
     {

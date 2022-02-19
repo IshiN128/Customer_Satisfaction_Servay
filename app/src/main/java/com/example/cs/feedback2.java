@@ -18,7 +18,6 @@ public class feedback2 extends AppCompatActivity {
 
 
     ImageButton  dn;
-    ImageButton ignr;
     Button AprtNo;
     private EditText aprtNo;
 

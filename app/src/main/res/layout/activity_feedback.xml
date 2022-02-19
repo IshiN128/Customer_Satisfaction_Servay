@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -20,14 +21,14 @@
 
     <TextView
         android:id="@+id/feedback_lbl"
-        android:layout_width="509dp"
-        android:layout_height="185dp"
+        android:layout_width="568dp"
+        android:layout_height="212dp"
         android:layout_marginTop="88dp"
         android:fontFamily="@font/caudex"
         android:shadowColor="#F8F8F8"
         android:shadowRadius="12"
         android:soundEffectsEnabled="true"
-        android:text="Thank You for your Feedback !!"
+        android:text="Thank You for your Good Feedback !!"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
         android:textColor="@color/primary"
@@ -43,7 +44,7 @@
         style="@android:style/Widget.ImageButton"
         android:layout_width="255dp"
         android:layout_height="65dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="132dp"
         android:layout_marginEnd="544dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/feedback_lbl"
@@ -69,7 +70,7 @@
         android:id="@+id/textView16"
         android:layout_width="164dp"
         android:layout_height="33dp"
-        android:layout_marginStart="192dp"
+        android:layout_marginStart="200dp"
         android:fontFamily="@font/caudex"
         android:text="* Optional"
         android:textColor="#000000"
@@ -78,12 +79,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.468" />
+        app:layout_constraintVertical_bias="0.547" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="388dp"
-        android:layout_height="676dp"
+        android:layout_width="390dp"
+        android:layout_height="784dp"
         android:layout_marginStart="892dp"
         android:layout_marginBottom="16dp"
         android:background="@color/primary"

@@ -1,15 +1,15 @@
 package com.example.cs;
 
-public class storeData {
+public class storeData2 {
 
     private String aptNo;
-    private String vote = "Excellent";
+    private String vote = "Good";
 
-    public storeData()
+    public storeData2()
     {
     }
 
-    public storeData(String aptNO){
+    public storeData2(String aptNO){
         this.aptNo=aptNO;
 
     }

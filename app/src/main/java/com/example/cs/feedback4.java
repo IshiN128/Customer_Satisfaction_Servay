@@ -65,7 +65,7 @@ public class feedback4 extends AppCompatActivity {
     private void addDataToFirestore(String apartNo) {
 
         CollectionReference dbaptno = db.collection("ApartmentNos");
-        storeData ApartmentNos = new storeData(apartNo);
+        storeData4 ApartmentNos = new storeData4(apartNo);
 
         dbaptno.add(ApartmentNos).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
             @Override

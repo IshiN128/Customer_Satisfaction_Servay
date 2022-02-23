@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
@@ -8,42 +7,26 @@
 	android:background="#F58A42"
 	tools:context=".feedback4">
 
-	<TextView
-		android:id="@+id/textView"
-		android:layout_width="65dp"
-		android:layout_height="35dp"
-		android:layout_marginStart="620dp"
-		android:fontFamily="@font/caudex"
-		android:text="- OR -"
-		android:textColor="#8D000000"
-		android:textSize="20sp"
-		android:textStyle="bold"
-		app:layout_constraintBottom_toBottomOf="parent"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="parent"
-		app:layout_constraintVertical_bias="0.702" />
-
-
 
 	<LinearLayout
 		android:id="@+id/linearLayout2"
-		android:layout_width="1279dp"
-		android:layout_height="225dp"
-		android:layout_marginBottom="460dp"
+		android:layout_width="853dp"
+		android:layout_height="152dp"
 		android:background="@drawable/fmi_top_bar"
 		android:orientation="vertical"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintStart_toStartOf="parent">
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.0">
 
 	</LinearLayout>
 
 	<ImageButton
 		android:id="@+id/btn_dn"
 		style="@android:style/Widget.Holo.ImageButton"
-		android:layout_width="607dp"
-		android:layout_height="100dp"
-		android:layout_marginStart="348dp"
+		android:layout_width="533dp"
+		android:layout_height="56dp"
 		android:accessibilityLiveRegion="polite"
 		android:adjustViewBounds="true"
 		android:background="@drawable/button"
@@ -51,51 +34,48 @@
 		android:clickable="true"
 		android:cropToPadding="true"
 		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
-		app:layout_constraintVertical_bias="0.568" />
+		app:layout_constraintVertical_bias="0.566" />
 
 	<TextView
 		android:id="@+id/textView8"
-		android:layout_width="98dp"
-		android:layout_height="37dp"
+		android:layout_width="77dp"
+		android:layout_height="43dp"
 		android:fontFamily="@font/caudex"
 		android:text="DONE"
 		android:textAllCaps="true"
 		android:textAppearance="@style/FlatButton"
 		android:textColor="#FFFFFF"
-		android:textSize="30dp"
+		android:textSize="24sp"
 		app:layout_constraintBottom_toBottomOf="@+id/btn_dn"
 		app:layout_constraintEnd_toEndOf="@+id/btn_dn"
+		app:layout_constraintHorizontal_bias="0.502"
 		app:layout_constraintStart_toStartOf="@+id/btn_dn"
 		app:layout_constraintTop_toTopOf="@+id/btn_dn"
-		app:layout_constraintVertical_bias="0.512" />
+		app:layout_constraintVertical_bias="1.0" />
 
-	<EditText
-		android:id="@+id/txtbox_aptno"
-		android:layout_width="287dp"
-		android:layout_height="71dp"
-		android:layout_marginBottom="104dp"
-		android:ems="10"
-		android:focusable="auto"
-		android:focusableInTouchMode="true"
-		android:hint="Enter your Aparment No.."
-		android:inputType="textPersonName"
-		android:textColorHighlight="@color/primary"
-		android:textColorLink="@color/primary"
-		android:textCursorDrawable="@color/primary"
-		android:textSize="20sp"
-		android:textStyle="bold"
+	<Button
+		android:id="@+id/btn_AptNo"
+		android:layout_width="244dp"
+		android:layout_height="54dp"
+		android:layout_marginStart="8dp"
+		android:layout_marginTop="24dp"
+		android:background="@drawable/button2"
+		android:text="SEND"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="0.39"
-		app:layout_constraintStart_toStartOf="parent" />
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toEndOf="@+id/txtbox_aptno"
+		app:layout_constraintTop_toBottomOf="@+id/btn_dn"
+		app:layout_constraintVertical_bias="0.318" />
 
 	<TextView
 		android:id="@+id/textView16"
 		android:layout_width="164dp"
 		android:layout_height="33dp"
-		android:layout_marginStart="388dp"
+		android:layout_marginStart="196dp"
 		android:fontFamily="@font/caudex"
 		android:text="* Optional"
 		android:textColor="#000000"
@@ -104,31 +84,42 @@
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
-		app:layout_constraintVertical_bias="0.717" />
+		app:layout_constraintVertical_bias="0.746" />
 
-	<Button
-		android:id="@+id/btn_AptNo"
-		android:layout_width="244dp"
-		android:layout_height="54dp"
-		android:layout_marginStart="12dp"
-		android:layout_marginBottom="120dp"
-		android:background="@drawable/button2"
-		android:text="SEND"
+	<EditText
+		android:id="@+id/txtbox_aptno"
+		android:layout_width="260dp"
+		android:layout_height="69dp"
+		android:layout_marginBottom="64dp"
+		android:ems="10"
+		android:focusable="auto"
+		android:focusableInTouchMode="true"
+		android:hint="Enter your Aparment No.."
+		android:inputType="textPersonName"
+		android:textColorHighlight="@color/primary"
+		android:textColorLink="@color/black"
+		android:textCursorDrawable="@color/primary"
+		android:textSize="20sp"
+		android:textStyle="bold"
 		app:layout_constraintBottom_toBottomOf="parent"
-		app:layout_constraintStart_toEndOf="@+id/txtbox_aptno" />
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.294"
+		app:layout_constraintStart_toStartOf="parent" />
 
 	<TextView
 		android:id="@+id/textView4"
-		android:layout_width="518dp"
-		android:layout_height="147dp"
-		android:layout_marginTop="144dp"
+		android:layout_width="697dp"
+		android:layout_height="75dp"
 		android:text="Thank You For Your Feedback!!"
 		android:textAlignment="center"
-		android:textSize="60sp"
+		android:textSize="48sp"
 		android:textStyle="bold"
+		app:layout_constraintBottom_toTopOf="@+id/textView8"
 		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.501"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="parent" />
+		app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+		app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

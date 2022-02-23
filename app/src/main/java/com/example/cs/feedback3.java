@@ -48,7 +48,7 @@ public class feedback3 extends AppCompatActivity {
                     startActivity(intent);
 
                     Map<String, Object> test = new HashMap<>();
-                    test.put("Response", "Poor");
+                    test.put("Response", "Average");
                     db.collection("ApartmentNos").add(test);
 
                     Toast.makeText(feedback3.this, "Your Feedback has been send!!", Toast.LENGTH_SHORT).show();

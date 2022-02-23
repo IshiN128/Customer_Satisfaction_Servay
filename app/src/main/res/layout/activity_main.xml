@@ -14,8 +14,8 @@
 
     <ImageView
         android:id="@+id/imageView11"
-        android:layout_width="1281dp"
-        android:layout_height="121dp"
+        android:layout_width="1273dp"
+        android:layout_height="101dp"
         android:background="#F68B43"
         android:layoutDirection="inherit"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,8 +25,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="1275dp"
-        android:layout_height="36dp"
+        android:layout_width="1280dp"
+        android:layout_height="21dp"
         android:background="#142C4F"
         android:layoutDirection="inherit"
         android:orientation="vertical"
@@ -36,12 +36,12 @@
 
     <ImageView
         android:id="@+id/imageView12"
-        android:layout_width="284dp"
-        android:layout_height="116dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="250dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="16dp"
         android:layoutDirection="inherit"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintHorizontal_bias="0.064"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView11"
         app:srcCompat="@drawable/fmi_lpgo_transparent" />
@@ -50,17 +50,17 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="152dp"
+        android:layout_marginStart="76dp"
         android:fontFamily="@font/caudex"
         android:layoutDirection="inherit"
         android:text="How are our services??"
         android:textColor="@color/primary"
-        android:textSize="60sp"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView12"
         app:layout_constraintTop_toTopOf="@+id/imageView11"
-        app:layout_constraintVertical_bias="0.044" />
+        app:layout_constraintVertical_bias="0.071" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/group"
@@ -70,82 +70,82 @@
         app:constraint_referenced_ids="linearLayout,imageView11,imageView12,textView3" />
 
     <Button
-        android:id="@+id/btn_poor"
-        android:layout_width="235dp"
-        android:layout_height="334dp"
-        android:layout_marginStart="764dp"
-        android:drawableBottom="@drawable/artboard_44"
-        android:drawingCacheQuality="high"
-        android:text="POOR          ⭐⭐"
-        android:textSize="24sp"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.598" />
-
-    <Button
-        android:id="@+id/btn_excellent"
-
-        android:layout_width="235dp"
-        android:layout_height="334dp"
-        android:layout_marginStart="32dp"
-        android:drawableBottom="@drawable/artboard_14"
-        android:drawingCacheQuality="high"
-        android:text="Excellent ⭐⭐⭐⭐⭐"
-        android:textSize="24sp"
-        app:cornerRadius="@dimen/cardview_compat_inset_shadow"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.598" />
-
-    <Button
         android:id="@+id/btn_average"
 
-        android:layout_width="235dp"
-        android:layout_height="334dp"
-        android:layout_marginStart="520dp"
-        android:drawableBottom="@drawable/artboard_34"
+        android:layout_width="129dp"
+        android:layout_height="218dp"
+        android:layout_marginStart="356dp"
+        android:drawableBottom="@drawable/good1"
         android:drawingCacheQuality="high"
         android:text="Average ⭐⭐⭐"
-        android:textSize="24sp"
+        android:textSize="16sp"
         app:cornerRadius="@dimen/cardview_compat_inset_shadow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.598" />
+        app:layout_constraintVertical_bias="0.669" />
 
     <Button
-        android:id="@+id/btn_good"
-
-        android:layout_width="235dp"
-        android:layout_height="334dp"
-        android:layout_marginStart="276dp"
-        android:drawableBottom="@drawable/artboard_24"
+        android:id="@+id/btn_poor"
+        android:layout_width="129dp"
+        android:layout_height="218dp"
+        android:layout_marginStart="492dp"
+        android:drawableBottom="@drawable/avg1"
         android:drawingCacheQuality="high"
-        android:text="Good ⭐⭐⭐⭐"
-        android:textSize="24sp"
-        app:cornerRadius="@dimen/cardview_compat_inset_shadow"
+        android:text="POOR          ⭐⭐"
+        android:textSize="16sp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.598" />
+        app:layout_constraintVertical_bias="0.669" />
 
     <Button
         android:id="@+id/btn_vpoor"
 
-        android:layout_width="235dp"
-        android:layout_height="334dp"
-        android:layout_marginStart="1008dp"
-        android:drawableBottom="@drawable/artboard_54"
+        android:layout_width="129dp"
+        android:layout_height="218dp"
+        android:layout_marginStart="628dp"
+        android:drawableBottom="@drawable/avg1"
         android:drawingCacheQuality="high"
         android:text="Very Poor    ⭐"
-        android:textSize="24sp"
+        android:textSize="15.5sp"
         app:cornerRadius="@dimen/cardview_compat_inset_shadow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.598" />
+        app:layout_constraintVertical_bias="0.669" />
+
+    <Button
+        android:id="@+id/btn_good"
+
+        android:layout_width="129dp"
+        android:layout_height="218dp"
+        android:layout_marginStart="220dp"
+        android:drawableBottom="@drawable/good1"
+        android:drawingCacheQuality="high"
+        android:text="Good ⭐⭐⭐⭐"
+        android:textSize="16sp"
+        app:cornerRadius="@dimen/cardview_compat_inset_shadow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.669" />
+
+    <Button
+        android:id="@+id/btn_excellent"
+
+        android:layout_width="129dp"
+        android:layout_height="218dp"
+        android:layout_marginStart="84dp"
+        android:drawableBottom="@drawable/ex1"
+        android:drawingCacheQuality="high"
+        android:text="Excellent ⭐⭐⭐⭐⭐"
+        android:textSize="15.5sp"
+        app:cornerRadius="@dimen/cardview_compat_inset_shadow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.669" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

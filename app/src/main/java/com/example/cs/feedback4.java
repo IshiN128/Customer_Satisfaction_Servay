@@ -31,7 +31,7 @@ public class feedback4 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_feedbackgood);
+        setContentView(R.layout.activity_feedback4);
 
         dn = findViewById(R.id.btn_dn);
         AprtNo = findViewById(R.id.btn_AptNo);

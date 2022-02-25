@@ -25,9 +25,9 @@
 	<ImageButton
 		android:id="@+id/btn_dn"
 		style="@android:style/Widget.Holo.ImageButton"
-		android:layout_width="555dp"
-		android:layout_height="67dp"
-		android:layout_marginStart="388dp"
+		android:layout_width="607dp"
+		android:layout_height="100dp"
+		android:layout_marginStart="348dp"
 		android:accessibilityLiveRegion="polite"
 		android:adjustViewBounds="true"
 		android:background="@drawable/button"
@@ -37,44 +37,18 @@
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
-		app:layout_constraintVertical_bias="0.818" />
-
-	<Button
-		android:id="@+id/btn_AptNo"
-		android:layout_width="244dp"
-		android:layout_height="54dp"
-		android:layout_marginStart="12dp"
-		android:layout_marginBottom="28dp"
-		android:background="@drawable/button2"
-		android:text="SEND"
-		app:layout_constraintBottom_toTopOf="@+id/btn_dn"
-		app:layout_constraintStart_toEndOf="@+id/txtbox_aptno" />
-
-	<TextView
-		android:id="@+id/textView16"
-		android:layout_width="164dp"
-		android:layout_height="33dp"
-		android:layout_marginStart="388dp"
-		android:fontFamily="@font/caudex"
-		android:text="* Optional"
-		android:textColor="#000000"
-		android:textSize="20sp"
-		android:textStyle="bold"
-		app:layout_constraintBottom_toBottomOf="parent"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="parent"
-		app:layout_constraintVertical_bias="0.585" />
+		app:layout_constraintVertical_bias="0.568" />
 
 	<TextView
 		android:id="@+id/textView8"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
+		android:layout_width="98dp"
+		android:layout_height="37dp"
 		android:fontFamily="@font/caudex"
 		android:text="DONE"
 		android:textAllCaps="true"
 		android:textAppearance="@style/FlatButton"
 		android:textColor="#FFFFFF"
-		android:textSize="20sp"
+		android:textSize="30dp"
 		app:layout_constraintBottom_toBottomOf="@+id/btn_dn"
 		app:layout_constraintEnd_toEndOf="@+id/btn_dn"
 		app:layout_constraintStart_toStartOf="@+id/btn_dn"
@@ -85,7 +59,7 @@
 		android:id="@+id/txtbox_aptno"
 		android:layout_width="287dp"
 		android:layout_height="71dp"
-		android:layout_marginBottom="188dp"
+		android:layout_marginBottom="104dp"
 		android:ems="10"
 		android:focusable="auto"
 		android:focusableInTouchMode="true"
@@ -100,6 +74,32 @@
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintHorizontal_bias="0.39"
 		app:layout_constraintStart_toStartOf="parent" />
+
+	<TextView
+		android:id="@+id/textView16"
+		android:layout_width="164dp"
+		android:layout_height="33dp"
+		android:layout_marginStart="388dp"
+		android:fontFamily="@font/caudex"
+		android:text="* Optional"
+		android:textColor="#000000"
+		android:textSize="20sp"
+		android:textStyle="bold"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.717" />
+
+	<Button
+		android:id="@+id/btn_AptNo"
+		android:layout_width="244dp"
+		android:layout_height="54dp"
+		android:layout_marginStart="12dp"
+		android:layout_marginBottom="120dp"
+		android:background="@drawable/button2"
+		android:text="SEND"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toEndOf="@+id/txtbox_aptno" />
 
 	<TextView
 		android:id="@+id/textView4"

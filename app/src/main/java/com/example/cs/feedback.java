@@ -11,6 +11,8 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+import java.util.HashMap;
+import java.util.Map;
 
 public class feedback extends AppCompatActivity {
 
@@ -18,7 +20,6 @@ public class feedback extends AppCompatActivity {
 
 
     ImageButton  dn;
-    ImageButton ignr;
     Button AprtNo;
     private EditText aprtNo;
 
@@ -42,6 +43,12 @@ public class feedback extends AppCompatActivity {
                 Intent intent =new Intent(feedback.this,MainActivity.class);
                 startActivity(intent);
 
+                Map<String, Object> test = new HashMap<>();
+                test.put("Response", "Excellent");
+                db.collection("ApartmentNos").add(test);
+
+                Toast.makeText(feedback.this, "Your Feedback has been send!!", Toast.LENGTH_SHORT).show();
+
             }
         });
 
@@ -54,8 +61,13 @@ public class feedback extends AppCompatActivity {
                 apartNo = aprtNo.getText().toString();
                 addDataToFirestore(apartNo);//adding data to database
 
+                Intent intent =new Intent(feedback.this,MainActivity.class);
+                startActivity(intent);
+
             }
         });
+
+
 
 
         };

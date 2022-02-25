@@ -71,6 +71,7 @@ public class feedback extends AppCompatActivity {
 
 
         };
+
     private void addDataToFirestore(String apartNo) {
 
         CollectionReference dbaptno = db.collection("ApartmentNos");
@@ -84,6 +85,11 @@ public class feedback extends AppCompatActivity {
         });
 
     }
+
+
+
+
+
 
 }
 
